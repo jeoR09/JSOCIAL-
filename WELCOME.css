@@ -1,10 +1,11 @@
-
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
 }
+
+/* Header Styles */
 .header {
   background-color: #ff006a;
   color: #fff;
@@ -31,6 +32,7 @@ body {
   background-color: #555;
 }
 
+/* Main Container */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -41,25 +43,24 @@ body {
   padding: 0 20px;
 }
 
+/* Text Section */
 .text-section {
   flex: 1;
   max-width: 500px;
 }
-
 .text-section h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
 }
-
 .text-section h2 {
   font-size: 1.5em;
   margin-bottom: 20px;
 }
 
+/* Buttons */
 .btn-group {
   margin-top: 20px;
 }
-
 .try-btn, .see-btn {
   background-color: #ff006a;
   color: #fff;
@@ -70,11 +71,14 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .try-btn:hover, .see-btn:hover {
-  background-color: #ff006a;
+  background-color: #e6005c;
+}
+.btn-group a {
+  text-decoration: none;
 }
 
+/* Image Section */
 .image-section {
   flex: 1;
   display: flex;
@@ -82,7 +86,6 @@ body {
   align-items: center;
   max-width: 300px;
 }
-
 .main-image {
   width: 100%;
   max-width: 400px;
@@ -90,38 +93,7 @@ body {
   border-radius: 20px;
 }
 
-.floating-box {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 200px;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  z-index: 1000;
-}
-
-.floating-box img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-.btn-group a {
-    text-decoration: none; /* Remove underline */
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .text-section, .image-section {
-    max-width: 100%;
-  }
-}
-/* Footer styles */
+/* Footer Styles */
 .footer {
   text-align: center;
   padding: 20px;
@@ -135,4 +107,34 @@ body {
 }
 .footer a:hover {
   text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-section, .image-section {
+    max-width: 100%;
+  }
+}
+
+/* Floating Box (if used elsewhere) */
+.floating-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 200px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+.floating-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
