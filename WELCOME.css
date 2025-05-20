@@ -108,6 +108,9 @@ body {
   height: auto;
   border-radius: 8px;
 }
+.btn-group a {
+    text-decoration: none; /* Remove underline */
+}
 
 @media (max-width: 768px) {
   .container {
