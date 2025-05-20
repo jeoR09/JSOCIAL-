@@ -1,0 +1,142 @@
+/* Reset + Fonts */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Layout Wrapper */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Top Bar / Header */
+.topbar {
+  background-color: #ff006a;
+  border-bottom: 1px solid #ddd;
+  padding: 0 20px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo on the left */
+.topbar-logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Right side: nav + profile */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.topbar-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.topbar-nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.topbar-nav a:hover {
+  color: #ff006a;
+}
+
+.topbar-profile img.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Page Title Below Header */
+.topbar-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 20px 30px 10px;
+}
+
+/* Newsfeed */
+.newsfeed {
+  padding: 0 30px 30px;
+  overflow-y: auto;
+}
+
+.post-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.post-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.post-author {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.post-time {
+  margin: 0;
+  font-size: 0.85em;
+  color: #888;
+}
+
+.post-content {
+  margin: 15px 0;
+  font-size: 1em;
+}
+
+.post-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.post-actions button {
+  background-color: #ff006a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 0.95em;
+  transition: background-color 0.2s;
+}
+
+.post-actions button:hover {
+  background-color: #e6005f;
+}
