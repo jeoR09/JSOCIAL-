@@ -35,7 +35,7 @@ body {
 
 .nav-bar a:hover,
 .nav-bar .active {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Main content */
@@ -79,6 +79,7 @@ body {
     transform: translateY(-5px);
 }
 
+
 .box h2 {
     margin-bottom: 1rem;
     color: #ffffff;
@@ -88,6 +89,9 @@ body {
 .box p {
     font-size: 1rem;
     color: #ffffff;
+}
+.btn-group a {
+    text-decoration: none; /* Remove underline */
 }
 
 /* Footer styles */
